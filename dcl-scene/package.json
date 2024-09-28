@@ -21,8 +21,9 @@
     "@dcl/ui-scene-utils": "^1.8.4",
     "dcldash": "^0.0.33"
   },
-  "bundleDependencies": [
+  "bundledDependencies": [
     "@dcl/ecs-scene-utils",
-    "@dcl/ui-scene-utils"
+    "@dcl/ui-scene-utils",
+    "dcldash"
   ]
 }
