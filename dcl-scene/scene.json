@@ -1,20 +1,28 @@
 {
   "display": {
-    "title": "DCL Boilerplate",
-    "description": "My new Decentraland project",
+    "title": "Space Elevator - DCL Music Festical 2024",
+    "description": "Space Elevation! Make your way to the top of the Space Elevator",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
   },
   "owner": "",
   "contact": {
-    "name": "AJS",
-    "email": ""
+    "name": "stom",
+    "email": "tomsteventon@gmail.com"
   },
   "main": "bin/game.js",
   "tags": [],
   "scene": {
     "parcels": [
-      "0,0"
+      "0,0",
+      "1,0",
+      "2,0",
+      "0,1",
+      "1,1",
+      "2,1",
+      "0,2",
+      "1,2",
+      "2,2"
     ],
     "base": "0,0"
   },
