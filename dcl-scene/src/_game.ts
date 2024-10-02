@@ -9,15 +9,13 @@
 
 import { Settings } from "./_settings";
 
-import * as utils from '@dcl/ecs-scene-utils'
-import * as ui from '@dcl/ui-scene-utils'
-import * as dcldash from "dcldash"
+//import * as utils from "@dcl/ecs-scene-utils";
+//import * as ui from "@dcl/ui-scene-utils";
+//import * as dcldash from "dcldash";
 
-const _scene = new Entity('_scene')
-_scene.addComponent(Settings.SCENE_TRANSFORM)
-engine.addEntity(_scene)
-
-
+const _scene = new Entity("_scene");
+_scene.addComponent(Settings.SCENE_TRANSFORM);
+engine.addEntity(_scene);
 
 // ███████╗██╗  ██╗ █████╗ ███╗   ███╗██████╗ ██╗     ███████╗     █████╗ ███████╗███████╗███████╗████████╗
 // ██╔════╝╚██╗██╔╝██╔══██╗████╗ ████║██╔══██╗██║     ██╔════╝    ██╔══██╗██╔════╝██╔════╝██╔════╝╚══██╔══╝
@@ -27,13 +25,46 @@ engine.addEntity(_scene)
 // ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚══════╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝
 //
 
-let asset1 = new Entity()
-asset1.addComponent(new GLTFShape("models/example_model.gltf"))
+/* let asset1 = new Entity();
+asset1.addComponent(new GLTFShape("models/space-elevator.gltf"));
 asset1.addComponent(
-  new Transform({
-    position: new Vector3(0, 0, 0),
-    scale: new Vector3(1, 1, 1),
-    rotation: Quaternion.Euler(0, 0, 0)
-  })
-)
-asset1.setParent(_scene)
+	new Transform({
+		position: new Vector3(0, 0, 0),
+		scale: new Vector3(1, 1, 1),
+		rotation: Quaternion.Euler(0, 0, 0),
+	})
+);
+asset1.setParent(_scene); */
+
+let baggageBelt = new Entity();
+baggageBelt.addComponent(new GLTFShape("models/baggageBelt.gltf"));
+baggageBelt.addComponent(
+	new Transform({
+		position: new Vector3(0, 0, 0),
+		scale: new Vector3(1, 1, 1),
+		rotation: Quaternion.Euler(0, 0, 0),
+	})
+);
+baggageBelt.setParent(_scene);
+
+/* let asset2 = new Entity();
+asset2.addComponent(new GLTFShape("models/layout-squircle-2.gltf"));
+asset2.addComponent(
+	new Transform({
+		position : new Vector3(0, 0, 0),
+		scale    : new Vector3(1, 1, 1),
+		rotation : Quaternion.Euler(0, 0, 0),
+	})
+);
+asset2.setParent(_scene); */
+
+/* let conveyor = new Entity();
+conveyor.addComponent(new GLTFShape("models/conveyor-test.gltf"));
+conveyor.addComponent(
+	new Transform({
+		position: new Vector3(-8, 0, -8),
+		scale: new Vector3(1, 1, 1),
+		rotation: Quaternion.Euler(0, 0, 0),
+	})
+);
+conveyor.setParent(_scene); */
