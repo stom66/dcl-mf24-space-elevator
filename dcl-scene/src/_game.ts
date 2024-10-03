@@ -25,38 +25,27 @@ engine.addEntity(_scene);
 // ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚══════╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝
 //
 
-/* let asset1 = new Entity();
-asset1.addComponent(new GLTFShape("models/space-elevator.gltf"));
-asset1.addComponent(
+let arm = new Entity();
+arm.addComponent(new GLTFShape("models/armature.gltf"));
+arm.addComponent(
 	new Transform({
 		position: new Vector3(0, 0, 0),
 		scale: new Vector3(1, 1, 1),
 		rotation: Quaternion.Euler(0, 0, 0),
 	})
 );
-asset1.setParent(_scene); */
+arm.setParent(_scene);
 
-let baggageBelt = new Entity();
-baggageBelt.addComponent(new GLTFShape("models/baggageBelt.gltf"));
-baggageBelt.addComponent(
+/* let spaceElevator = new Entity();
+spaceElevator.addComponent(new GLTFShape("models/space-elevator.gltf"));
+spaceElevator.addComponent(
 	new Transform({
 		position: new Vector3(0, 0, 0),
 		scale: new Vector3(1, 1, 1),
 		rotation: Quaternion.Euler(0, 0, 0),
 	})
 );
-baggageBelt.setParent(_scene);
-
-/* let asset2 = new Entity();
-asset2.addComponent(new GLTFShape("models/layout-squircle-2.gltf"));
-asset2.addComponent(
-	new Transform({
-		position : new Vector3(0, 0, 0),
-		scale    : new Vector3(1, 1, 1),
-		rotation : Quaternion.Euler(0, 0, 0),
-	})
-);
-asset2.setParent(_scene); */
+spaceElevator.setParent(_scene); */
 
 /* let conveyor = new Entity();
 conveyor.addComponent(new GLTFShape("models/conveyor-test.gltf"));
