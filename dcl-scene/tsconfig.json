@@ -1,23 +1,14 @@
 {
-  "compilerOptions": {
-	"ignoreDeprecations": "5.0",
-    "outFile": "./bin/game.js",
-    "allowJs": true,
-		"target": "es2017",
-    "strict": true,
-    "paths": {
-      "@dcl/ui-scene-utils": [
-        "node_modules/@dcl/ui-scene-utils/dist/index.d.ts",
-      ],
-      "@dcl/ecs-scene-utils": [
-        "node_modules/@dcl/ecs-scene-utils/dist/index.d.ts"
-      ],
-      "dcldash": [
-        "node_modules/dcldash/dist/index.d.ts"
-      ]
-    },
-    "baseUrl": "."
-  },
-  "include": ["src/**/*.ts"],
-  "extends": "./node_modules/decentraland-ecs/types/tsconfig.json"
-}
+	"compilerOptions": {
+	  "allowJs": true,
+	  "strict": true,
+	  "skipLibCheck": true,
+	  "resolveJsonModule": true
+	},
+	"include": [
+	  "src/**/*.ts",
+	  "src/**/*.tsx"
+	],
+	"extends": "@dcl/sdk/types/tsconfig.ecs7.json"
+  }
+  
