@@ -35,5 +35,8 @@
 		}
 	],
 	"requiredPermissions": [],
-	"featureToggles": {}
+	"featureToggles": {},
+	"worldConfiguration": {
+		"name": "stom.dcl.eth"
+	}
 }
