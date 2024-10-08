@@ -4,6 +4,9 @@ bin
 # Blender backups
 *.blend[1-9]
 
+# Affinity lock files
+*afdesign~lock~
+
 # Logs
 logs
 *.log
