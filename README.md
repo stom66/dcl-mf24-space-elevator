@@ -17,9 +17,9 @@ See the folder `dcl-scene/models`.
 
 The final model is split into two `.glb` files which utilise the shared textures in the `space-elevator-textures` folder:
 
-* `dcl-scene/models/space-elevator-model.glb`
-* `dcl-scene/models/space-elevator-armature.glb`
-* `dcl-scene/models/space-elevator-textures/*`
+* [`dcl-scene/models/space-elevator-model.glb`](https://github.com/stom66/dcl-mf24-space-elevator/blob/main/dcl-scene/models/space-elevator-model.glb)
+* [`dcl-scene/models/space-elevator-armature.glb`](https://github.com/stom66/dcl-mf24-space-elevator/blob/main/dcl-scene/models/space-elevator-armature.glb.gltf)
+* [`dcl-scene/models/space-elevator-textures/*`](https://github.com/stom66/dcl-mf24-space-elevator/tree/main/dcl-scene/models/space-elevator-textures)
 
 I appreciate that the request was for a single glb file, however a bug with the Blender exporter conveniently appeared the day before the due date and broke all the animations when I tried to export the entire scene as a single file :(
 	
