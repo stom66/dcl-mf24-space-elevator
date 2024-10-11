@@ -1,20 +1,10 @@
-// ███████╗ ██████╗███████╗███╗   ██╗███████╗    ██████╗  █████╗ ██████╗ ███████╗███╗   ██╗████████╗
-// ██╔════╝██╔════╝██╔════╝████╗  ██║██╔════╝    ██╔══██╗██╔══██╗██╔══██╗██╔════╝████╗  ██║╚══██╔══╝
-// ███████╗██║     █████╗  ██╔██╗ ██║█████╗      ██████╔╝███████║██████╔╝█████╗  ██╔██╗ ██║   ██║
-// ╚════██║██║     ██╔══╝  ██║╚██╗██║██╔══╝      ██╔═══╝ ██╔══██║██╔══██╗██╔══╝  ██║╚██╗██║   ██║
-// ███████║╚██████╗███████╗██║ ╚████║███████╗    ██║     ██║  ██║██║  ██║███████╗██║ ╚████║   ██║
-// ╚══════╝ ╚═════╝╚══════╝╚═╝  ╚═══╝╚══════╝    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝
-//
-// Note the 180 rotation, this is so that position in Blender align with positions in DCL (with Y and Z swapped)
-
-//import { Settings } from './_settings'
-
-import { engine, GltfContainer, pointerEventsSystem, Transform } from '@dcl/sdk/ecs'
+import { engine, GltfContainer, Transform } from '@dcl/sdk/ecs'
 import { Quaternion, Vector3 } from '@dcl/sdk/math'
 
-import { movePlayerTo } from '~system/RestrictedActions'
 import { ui_debug } from './ui'
 import { ReactEcsRenderer } from '@dcl/sdk/react-ecs'
+
+
 
 //  █████╗ ███████╗███████╗███████╗████████╗███████╗
 // ██╔══██╗██╔════╝██╔════╝██╔════╝╚══██╔══╝██╔════╝
@@ -23,33 +13,27 @@ import { ReactEcsRenderer } from '@dcl/sdk/react-ecs'
 // ██║  ██║███████║███████║███████╗   ██║   ███████║
 // ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝   ╚══════╝
 //
+// Note the 180 rotation, this is so that position in Blender align with positions in DCL (with Y and Z swapped)
 
-// Armature
-let arm = engine.addEntity()
-Transform.create(arm, {
+const EXT = ".glb" 
+
+let spaceStationModel = engine.addEntity()
+Transform.create(spaceStationModel, {
 	position: Vector3.create(0, 0, 0),
-	scale: Vector3.create(1, 1, 1),
+	scale   : Vector3.create(1, 1, 1),
 	rotation: Quaternion.fromEulerDegrees(0, 180, 0)
 })
-GltfContainer.create(arm, { src: 'models/armature.gltf' })
+GltfContainer.create(spaceStationModel, { src: 'models/space-elevator-model' + EXT })
 
-// Elevator
-let elevator = engine.addEntity()
-Transform.create(elevator, {
+let spaceStationArmature = engine.addEntity()
+Transform.create(spaceStationArmature, {
 	position: Vector3.create(0, 0, 0),
-	scale: Vector3.create(1, 1, 1),
+	scale   : Vector3.create(1, 1, 1),
 	rotation: Quaternion.fromEulerDegrees(0, 180, 0)
 })
-GltfContainer.create(elevator, { src: 'models/space-elevator.gltf' })
+GltfContainer.create(spaceStationArmature, { src: 'models/space-elevator-armature' + EXT })
 
-// Elevator
-let tmp = engine.addEntity()
-Transform.create(tmp, {
-	position: Vector3.create(0, 0, 0),
-	scale: Vector3.create(1, 1, 1),
-	rotation: Quaternion.fromEulerDegrees(0, 180, 0)
-})
-GltfContainer.create(tmp, { src: 'models/tmp.gltf' })
+
 
 // ██╗   ██╗██╗
 // ██║   ██║██║
@@ -58,5 +42,7 @@ GltfContainer.create(tmp, { src: 'models/tmp.gltf' })
 // ╚██████╔╝██║
 //  ╚═════╝ ╚═╝
 //
+// Only used for development, not intended to be present in final scene.
+
 const uiComponent = () => [ui_debug()]
 ReactEcsRenderer.setUiRenderer(uiComponent)
