@@ -3,32 +3,27 @@
 # Space Elevator
 ## Decentraland Music Festival 2024
 
-This repostiory contains my submission for the Decentraland Music Festival 2024. 
+This respository contains my submission for the Decentraland Music Festival 2024. 
 
-It contains the final exported assets, a demo scene, and all of the source assets used to create the scene.
+It contains the final exported asset, a demo scene, and all of the source assets used to create the scene.
 
-Live Demo: https://decentraland.org/play/?NETWORK=mainnet&position=0%2C0&realm=stom.dcl.eth
+#### Live Demo: [stom.dcl.eth](https://decentraland.org/play/?NETWORK=mainnet&position=0%2C0&ealm=stom.dcl.eth)
 
 ---
 
 ## Final model files:
 
-See the folder `dcl-scene/models`.
+See the folder `dcl-scene/models`:
 
-The final model is split into two `.glb` files which utilise the shared textures in the `space-elevator-textures` folder:
+* [`dcl-scene/models/space-elevator.glb`](https://github.com/stom66/dcl-mf24-space-elevator/blob/main/dcl-scene/models/space-elevator.glb)
 
-* [`dcl-scene/models/space-elevator-model.glb`](https://github.com/stom66/dcl-mf24-space-elevator/blob/main/dcl-scene/models/space-elevator-model.glb)
-* [`dcl-scene/models/space-elevator-armature.glb`](https://github.com/stom66/dcl-mf24-space-elevator/blob/main/dcl-scene/models/space-elevator-armature.glb.gltf)
-* [`dcl-scene/models/space-elevator-textures/*`](https://github.com/stom66/dcl-mf24-space-elevator/tree/main/dcl-scene/models/space-elevator-textures)
-
-I appreciate that the request was for a single glb file, however a bug with the Blender exporter conveniently appeared the day before the due date and broke all the animations when I tried to export the entire scene as a single file :(
+> Note: the model transforms require a 180 degree rotation on the Y axis
 	
-> Note: the model transforms require a 180 degree rotation on the Y axis.
 
 
 ---
 
-## Running the scene
+## Demo scene
 
 1) Clone this repo in your favourite way: via GitHub Desktop, or by running the following in a terminal
 	```
