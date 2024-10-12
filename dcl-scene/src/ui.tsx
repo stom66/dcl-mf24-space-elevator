@@ -67,7 +67,7 @@ export function ui_debug() {
 			<Button
 				key         = "topdeck"
 				uiTransform = {{ width: 180, height: 40, margin: 8 }}
-				value       = 'Spsace Station'
+				value       = 'Space Station'
 				variant     = 'primary'
 				fontSize    = {14}
 				onMouseDown = {() => {
