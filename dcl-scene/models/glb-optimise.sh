@@ -17,7 +17,6 @@ do
     gltf-pipeline \
         --input $f \
         --output ${f%.*}.glb \
-        --separateTextures \
         --stats
     echo "--------------------------------------------"
 done
