@@ -9,13 +9,9 @@ It contains the final exported asset, a demo scene, and all of the source assets
 
 #### Live Demo: [stom.dcl.eth](https://decentraland.org/play/?NETWORK=mainnet&position=0%2C0&ealm=stom.dcl.eth)
 
----
+#### Final model files:
 
-## Final model files:
-
-See the folder `dcl-scene/models`:
-
-* [`dcl-scene/models/space-elevator.glb`](https://github.com/stom66/dcl-mf24-space-elevator/blob/main/dcl-scene/models/space-elevator.glb)
+The final, combined `glb` file can be downloaded from: [`dcl-scene/models/space-elevator.glb`](https://github.com/stom66/dcl-mf24-space-elevator/blob/main/dcl-scene/models/space-elevator.glb)
 
 > Note: the model transforms require a 180 degree rotation on the Y axis
 	
