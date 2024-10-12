@@ -7,9 +7,9 @@ This respository contains my submission for the Decentraland Music Festival 2024
 
 It contains the final exported asset, a demo scene, and all of the source assets used to create the scene.
 
-#### Live Demo: [stom.dcl.eth](https://decentraland.org/play/?NETWORK=mainnet&position=0%2C0&ealm=stom.dcl.eth)
+### Live Demo: [stom.dcl.eth](https://decentraland.org/play/?NETWORK=mainnet&position=0%2C0&ealm=stom.dcl.eth)
 
-#### Final model files:
+### Final model files:
 
 The final, combined `glb` file can be downloaded from: [`dcl-scene/models/space-elevator.glb`](https://github.com/stom66/dcl-mf24-space-elevator/blob/main/dcl-scene/models/space-elevator.glb)
 
