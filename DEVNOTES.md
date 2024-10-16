@@ -19,3 +19,13 @@ Deploy to world:
 Run from `dcl-scene` folder:
 
 `npm run deploy -- --target-content https://worlds-content-server.decentraland.org`
+
+
+### ToDo:
+
+- [x] offset securoBot animations
+- [x] add more colliders around the ufo to prevent people just jumping on the outer wall
+- [x] fix uvs on restricted decal near storage door
+- [x] fix collider on midway upper exit steps 
+- [x] move warning cone
+- 
