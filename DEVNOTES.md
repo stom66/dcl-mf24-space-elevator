@@ -28,4 +28,6 @@ Run from `dcl-scene` folder:
 - [x] fix uvs on restricted decal near storage door
 - [x] fix collider on midway upper exit steps 
 - [x] move warning cone
-- 
+- [x] Fix normals on train interior
+- [x] Add emissive to outside rim of the roof
+- [x] Remove grass
