@@ -2,8 +2,8 @@
 	"ecs7": true,
 	"runtimeVersion": "7",
 	"display": {
-		"title": "Space Elevator - DCL Music Festival 2024",
-		"description": "Space Elevation! Make your way to the top of the Space Elevator",
+		"title": "Space Elevation",
+		"description": "Make your way to the top of the Space Elevator. Look out for Alien activity, beware of diversions, and try to find the four escaped Octopuses!",
 		"navmapThumbnail": "images/scene-thumbnail.png",
 		"favicon": "favicon_asset"
 	},
