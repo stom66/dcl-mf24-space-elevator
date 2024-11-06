@@ -13,6 +13,8 @@ It contains the final exported asset, a demo scene, and all of the source assets
 
 > Note: the model transforms require a 180 degree rotation on the Y axis
 	
+	
+![Sceme Thumbnail](https://github.com/stom66/dcl-mf24-space-elevator/blob/main/dcl-scene/images/scene-thumbnail.png)
 
 
 ---
